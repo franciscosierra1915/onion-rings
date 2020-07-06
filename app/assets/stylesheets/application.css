@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+* {margin:0;padding:0;list-style:none;font-family:Arial, Helvetica, sans-serif;text-decoration: none;}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.reviews-list-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.review-item {
+    margin: 15px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.review-item:first-child {
+    margin-left: 0px;
+}
+
+.review-item p {
+    margin: 3px 0px 0px 3px;
+    font-size: 13px;
+}
+
+.review-item-img-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
