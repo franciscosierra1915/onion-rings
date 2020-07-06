@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1 id="reviews-title">All Reviews</h1>
+
+    <div class="reviews-list-container">
+
+        <% @reviews.each do |review| %>
+            <%= link_to review_path(review), class: 'review-item' do %>
+                <div class="review-item-img-container">
+                    <img src="#" alt="Item Image">
+                </div>
+                <div>
+                    <p><%= review.onion_ring.name %></p>
+                </div>
+            <% end %>
+        <% end %>
+
+    </div>
+
+</div>
