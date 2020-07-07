@@ -3,11 +3,11 @@ class RestaurantsController < ApplicationController
     # show- Restaurant page displayes all onion rings, and the avrage rating for each one)
 
     def index
-        @resteraunt = Restaurant.all
+        @restaurants = Restaurant.all
     end
 
     def show
-        @resteraunt = Restaurant.find(params[:id])
+        @restaurants = Restaurant.find(params[:id])
     end
 
 end
