@@ -1,13 +1,10 @@
 <h1>Hello World</h1>
-<ul>
-  <% @restaurants.each do |res| %>
+  <% @restaurants.each do |r| %>
+    <ul>
     <li>
-      <%= res.name%>
+      <%= r.name%> </li>
       <br>
-      <%= res.address%>
-
-    <a href= '{restaraunts?}/ <%= user.res.id %> '> <%= res.name %>
-
-    </li>
-    <br>
+      <li>
+      <%= r.address%> </li>
+    </ul>
   <% end %>
